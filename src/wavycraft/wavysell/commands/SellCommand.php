@@ -10,6 +10,7 @@ use pocketmine\player\Player;
 
 use pocketmine\utils\Config;
 
+use wavycraft\wavysell\WavySell;
 use wavycraft\wavysell\api\WavySellAPI;
 
 use terpz710\messages\Messages;
