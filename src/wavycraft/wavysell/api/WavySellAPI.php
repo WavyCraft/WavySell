@@ -11,7 +11,7 @@ use pocketmine\utils\SingletonTrait;
 
 use wavycraft\wavysell\WavySell;
 
-use wavycraft\wavyeconomy\api\WavyEconomy;
+use wavycraft\wavyeconomy\api\WavyEconomyAPI;
 
 use terpz710\messages\Messages;
 
@@ -61,7 +61,7 @@ final class WavySellAPI {
         }
 
         if ($totalMoney > 0) {
-            WavyEconomy::getInstance()->addMoney($player->getName(), $totalMoney);
+            WavyEconomyAPI::getInstance()->addMoney($player->getName(), $totalMoney);
             $player->sendMessage((string) new Messages($message, "sold-item", ["{quantity}", "{money}", "{item_name}"], [number_format($sold), number_format($totalMoney), $item->getVanillaName()]));
         } else {
             $player->sendMessage((string) new Messages($message, "not-holding-sellable-item"));
@@ -92,7 +92,7 @@ final class WavySellAPI {
         }
 
         if ($totalMoney > 0) {
-            WavyEconomy::getInstance()->addMoney($player->getName(), $totalMoney);
+            WavyEconomyAPI::getInstance()->addMoney($player->getName(), $totalMoney);
             $player->sendMessage((string) new Messages($message, "sold-all", ["{quantity}", "{money}"], [number_format($sold), number_format($totalMoney)]));
         } else {
             $player->sendMessage((string) new Messages($message, "no-sellable-item"));
@@ -122,7 +122,7 @@ final class WavySellAPI {
         }
 
         if ($totalMoney > 0) {
-            WavyEconomy::getInstance()->addMoney($player->getName(), $totalMoney);
+            WavyEconomyAPI::getInstance()->addMoney($player->getName(), $totalMoney);
             $player->sendMessage((string) new Messages($message, "auto-sold-all", ["{quantity}", "{money}"], [number_format($sold), number_format($totalMoney)]));
         }
     }
