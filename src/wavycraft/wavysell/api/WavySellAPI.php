@@ -102,6 +102,7 @@ final class WavySellAPI {
     public function autoSellAll(Player $player) : void{
         $inventory = $player->getInventory();
         $itemsConfig = $this->items->get("items", []);
+        $message = new Config(WavySell::getInstance()->getDataFolder() . "messages.yml");
         $totalMoney = 0;
         $sold = 0;
 
