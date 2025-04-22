@@ -18,7 +18,7 @@ sold-all: "Sold &e{quantity}&f items for &a${money}"
 no-sellable-item: "&cYou dont have any items to sell!"
 
 # This message is when a player has 'autosell' on
-auto-sold-all: "Auto-Sold &e{quantity} items for &a${money}"
+auto-sold-all: "Auto-Sold &e{quantity}&f items for &a${money}"
 
 # This message is when a player toggles auto sell
 toggle-auto-sell: "Auto-Sell has been &e{status}"
