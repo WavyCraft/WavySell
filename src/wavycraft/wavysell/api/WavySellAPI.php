@@ -11,6 +11,8 @@ use pocketmine\utils\SingletonTrait;
 
 use wavycraft\wavysell\WavySell;
 
+use wavycraft\wavyeconomy\api\WavyEconomy;
+
 use terpz710\messages\Messages;
 
 final class WavySellAPI {
