@@ -1,0 +1,15 @@
+{
+    "name": "wavycraft/wavysell",
+    "type": "project",
+    "license": "GNU General Public License v3.0",
+    "require": {
+        "pocketmine/pocketmine-mp": "^5.0.0",
+        "cortexpe/commando": "*",
+        "terpz710/libmessages": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "WavySell\\": "src/WavySell"
+        }
+    }
+}

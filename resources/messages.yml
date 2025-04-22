@@ -1,0 +1,24 @@
+# Made by Terpz710 :p
+
+# You may use '&' for color formatting
+
+# This message is for when a player inputs a negative amount
+invalid-amount: "&cPlease enter a positive amount!"
+
+# This message is for when a player sold the item in their hand
+sold-item: "Sold &e{quantity} {item_name}&f for &a${money}"
+
+# This message is when a player is not holding a sellable item
+not-holding-sellable-item: "&cYou are not holding a sellable item!"
+
+# This message is when a player sells all sellable items in their inventory
+sold-all: "Sold &e{quantity}&f items for &a${money}"
+
+# This message is when a player doesnt have sellable items in their inventory
+no-sellable-item: "&cYou dont have any items to sell!"
+
+# This message is when a player has 'autosell' on
+auto-sold-all: "Auto-Sold &e{quantity} items for &a${money}"
+
+# This message is when a player toggles auto sell
+toggle-auto-sell: "Auto-Sell has been &e{status}"

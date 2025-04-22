@@ -1,0 +1,13 @@
+name: WavySell
+version: 1.0.0
+author: Terpz710
+api: 5.3.0
+main: wavycraft\wavysell\WavySell
+
+permissions:
+  wavysell.sell:
+    default: true
+  wavysell.sellall:
+    default: true
+  wavysell.autosell:
+    default: true
